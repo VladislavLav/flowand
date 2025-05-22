@@ -1,0 +1,743 @@
+/* Загальні стилі */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+/*заголовок*/
+.hero {
+    background-image: url('images/flowers-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0);
+}
+
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+header button {
+    background-color: #9694e5;
+    color: rgb(78, 50, 50);
+    border: none;
+    padding: 12px 24px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    margin-top: 220px; /* Додаємо відступ зверху, щоб кнопка була опущена */
+        width: auto;
+    display: inline-block;
+}
+
+header button:hover {
+    background-color: #829fcc;
+}
+
+/* Секція квітів */
+.hidden {
+    display: none;
+}
+
+#flowers {
+    margin: 50px 0;
+}
+
+.flower-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.flower {
+    background: rgb(196, 178, 230);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.flower:hover {
+    transform: scale(1.05);
+    background: rgb(176, 158, 210); /* Змінюємо колір фону */
+}
+
+.flower img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+.flower p {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 600;
+}
+
+/* Футер */
+footer {
+    background: #8787b9;
+    color: rgb(0, 0, 0);
+    padding: 20px 0;
+    margin-top: 30px;
+    position: relative; /* Щоб можна було розташувати текст абсолютно */
+}
+
+.footer-text {
+    position: absolute;
+    left: 20px; /* Вирівнюємо ліворуч */
+    bottom: 20px; /* Вирівнюємо вниз */
+    text-align: left;
+    font-size: 14px;
+    max-width: 300px; /* Щоб текст не займав багато місця */
+    color: rgb(33, 29, 29); /* Білий текст для кращої читабельності */
+}
+
+
+.seredina {
+    background: #e5c7f2b3;
+    color: rgb(48, 44, 44);
+}
+
+.hero {
+    position: relative;
+    background-image: url('images/flowers-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(0, 0, 0); /* Колір заголовку */
+}
+
+.hero {
+    position: relative;
+    background-image: url('images/flowers-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-text-box {
+    position: absolute; /* Розміщуємо поверх фону */
+    background: rgba(255, 255, 255, 0.7); /* Напівпрозорий фон */
+    padding: 20px 40px; /* Відступи всередині */
+    border-radius: 20px; /* Закруглені кути */
+    text-align: center; /* Центруємо текст всередині */
+    color: black; /* Колір тексту */
+    border: 3px solid #7e88d1; /* Рамка кольору фуксії */
+    left: 50%; /* Центруємо по горизонталі */
+    transform: translateX(-50%); /* Коригуємо, щоб було точно по центру */
+    top: 20%; /* Піднімаємо блок на 20% від верхньої частини */
+}
+ /* Кнопка "Інфо про нас" */
+.info-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #7aaada;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: 0.3s;
+    width: auto;
+  
+}
+
+.info-button:hover {
+    background-color: #5a89b5;
+}
+
+/* Контейнер для адреси */
+#address {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 16px;
+    display: none; /* Спочатку приховано */
+}
+
+
+/* Клас для показу адреси */
+.show-address {
+    display: block;
+}
+
+.telegram-link {
+    color: #2870d6; /* Блакитний колір для лінку */
+    text-decoration: none; /* Без підкреслення */
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.telegram-link:hover {
+    color: rgb(178, 178, 178); /* Зміна кольору при наведенні */
+}
+
+
+
+
+.instagram-link {
+    color: #4b1abb; /* Колір Instagram */
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+.instagram-link:hover {
+    color: rgb(178, 178, 178);
+}
+
+
+.face-link {
+color: #533ce8; /* Колір Viber */
+text-decoration: none;
+font-size: 16px;
+font-weight: 600;
+transition: color 0.3s;
+}
+.face-link:hover {
+color: rgb(178, 178, 178);
+}
+
+
+/* Стилі для модального вікна */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    align-items: center;
+    justify-content: center;
+}
+
+/* Контейнер контенту модального вікна */
+.modal-content {
+    background: white;
+    width: 70%;
+    max-width: 900px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+/* Закриваюча кнопка */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Контейнер зображення та тексту */
+.modal-container {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+/* Текстовий блок */
+.modal-text {
+    flex: 1;
+    max-width: 50%;
+}
+
+/* Заголовок */
+.modal-text h2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+/* Опис */
+.modal-text p {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+/* Зображення */
+.modal-img {
+    width: 50%;
+    max-width: 350px;
+    border-radius: 10px;
+}
+
+
+
+.flower {
+    position: relative;
+    text-align: center;
+    margin: 15px;
+}
+
+
+
+
+
+
+#cart {
+    position: fixed;
+    top: 10%;
+    left: 20px; /* Зміщення кошика вліво */
+    background-color: #ffffff; /* Білий фон для кошика */
+    padding: 20px;
+    border: 2px solid #908aa9; /* Стильна рамка */
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Тінь для ефекту піднесеності */
+    z-index: 1000;
+    font-family: 'Poppins', sans-serif;
+    display: none; /* Спочатку ховаємо кошик */
+}
+
+#cart h2 {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center; /* Центруємо заголовок */
+}
+
+#cart ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 1em;
+    color: #555;
+}
+
+#cart ul li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #eee; /* Легке розділення елементів */
+}
+
+#cart ul li button {
+    background-color: #f44336; /* Червона кнопка для видалення */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+}
+
+#cart ul li button:hover {
+    background-color: #d32f2f; /* Трохи темніший червоний при наведенні */
+}
+
+#cart p {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #333;
+    margin-top: 15px;
+    text-align: center; /* Центруємо загальну суму */
+}
+
+#cart .empty-cart {
+    font-style: italic;
+    color: #888;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+/* Контейнер для кнопки замовлення */
+.flower {
+    position: relative; /* Встановлюємо relative позицію для контейнера */
+    background: rgb(196, 178, 230);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Приховуємо кнопку за замовчуванням */
+.flower button {
+    display: none; /* Кнопка прихована */
+    position: absolute; /* Позиціонуємо кнопку абсолютно всередині контейнера */
+    bottom: 3px; /* Розміщуємо кнопку на відстані від нижнього краю */
+    left: 50%; /* Центруємо кнопку по горизонталі */
+    transform: translateX(-50%); /* Коригуємо відступ по горизонталі для точного центрування */
+    margin-top: 10px;
+    padding: 6px 12px;
+    background-color: #d9b0d9;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+
+
+/* Контейнер для квітки */
+.flower {
+    position: relative;
+    background: rgb(196, 178, 230);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+/* Поле вводу для кількості */
+.flower .quantity-input {
+    position: absolute;
+    bottom: 45px; /* Розміщуємо поле трохи вище кнопки */
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 10px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    width: 60px;
+}
+
+
+
+/* Стилі для модального вікна */
+#quantity-modal {
+    display: none; /* За замовчуванням ховаємо модальне вікно */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Напівпрозорий фон */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Показуємо вікно поверх іншого контенту */
+}
+
+/* Стилі для контенту модального вікна */
+#quantity-modal .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    width: 300px;
+    text-align: center;
+}
+
+/* Стилі для кнопок */
+#quantity-modal button {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+
+#quantity-modal button:hover {
+    background-color: #45a049;
+}
+
+/* Стилі для інпуту кількості */
+#quantity-modal input[type="number"] {
+    padding: 10px;
+    margin-top: 10px;
+    width: 80%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+
+
+
+/* Стиль для блоку з кількістю */
+#quantity-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стиль для кнопок плюс і мінус */
+#decrease-quantity, #increase-quantity {
+    width: 35px;
+    height: 35px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Стиль при наведенні на кнопки */
+#decrease-quantity:hover, #increase-quantity:hover {
+    background-color: #45a049;
+}
+
+/* Стиль для поля введення кількості */
+#quantity-input {
+    width: 60px;
+    padding: 10px;
+    text-align: center;
+    font-size: 1px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* Стиль при фокусі на полі вводу */
+#quantity-input:focus {
+    border-color: #4CAF50;
+}
+
+/* Стиль для контейнера, щоб кнопки та поле виглядали рівномірно */
+#quantity-section button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#quantity-section input {
+    display: inline-block;
+    font-size: 16px;
+}
+
+/* Додаткові стилі для відображення кнопки замовлення */
+#order-button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+}
+
+/* Стиль при наведенні на кнопку замовлення */
+#order-button:hover {
+    background-color: #45a049;
+}
+
+
+
+#checkout-button {
+    padding: 12px 20px;
+    background-color: #ca8edf;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#checkout-button:hover {
+    background-color: #584abe;
+}
+
+
+
+
+/* Оформлення контейнера для номера телефону */
+.phone-number-container {
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Оформлення лейблу */
+.phone-number-container label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+/* Оформлення поля вводу */
+#phone-number {
+    width: 100%;
+    padding: 3px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Оформлення при фокусі на поле */
+#phone-number:focus {
+    border-color: #4CAF50; /* Змінюємо колір рамки на зелений */
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.3); /* Легке сяйво */
+    outline: none; /* Забираємо стандартне синє оточення */
+}
+
+/* Оформлення для помилки (неправильний формат вводу) */
+#phone-number.invalid {
+    border-color: #f44336; /* Червона рамка для помилки */
+    background-color: #ffebee; /* Світле червоне підсвічування */
+}
+
+/* Оформлення для placeholder */
+#phone-number::placeholder {
+    color: #aaa;
+    font-style: italic;
+}
+
+
+
+
+
+
+/* Загальний стиль для форми */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.address-container {
+    display: block; /* Відображає блок */
+    margin-top: 15px; /* Додає відступ зверху */
+    width: 100%;
+}
+
+.address-container label {
+    display: block;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.address-container input {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.address-container {
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+.addres-container {
+    margin-bottom: 20px;
+}
+
+/* Стиль для мітки */
+.addres-container label {
+    display: block;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Стиль для поля вводу */
+.addres-container input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+}
+
+/* Стиль при фокусі на поле */
+.addres-container input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Стиль для кнопки */
+button {
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
