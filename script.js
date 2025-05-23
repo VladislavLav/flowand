@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function() {
     let showFlowersBtn = document.querySelector("button[onclick='showFlowers()']");
     if (showFlowersBtn) {
@@ -230,7 +229,6 @@ document.getElementById("checkout-button").addEventListener("click", function ()
         console.error(error);
     });
 });
-
 
 
 
