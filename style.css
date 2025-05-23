@@ -1,4 +1,3 @@
-
 /* Загальні стилі */
 body {
     font-family: 'Poppins', sans-serif;
@@ -815,3 +814,4 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
