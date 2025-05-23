@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 document.addEventListener("DOMContentLoaded", function() {
     let showFlowersBtn = document.querySelector("button[onclick='showFlowers()']");
     if (showFlowersBtn) {
